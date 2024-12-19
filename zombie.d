@@ -1,1 +1,0 @@
-zombie: Zombie.cpp

@@ -6,7 +6,7 @@
 #    By: saperrie <saperrie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/12 19:00:17 by saperrie          #+#    #+#              #
-#    Updated: 2024/12/12 19:04:27 by saperrie         ###   ########.fr        #
+#    Updated: 2024/12/19 17:30:21 by saperrie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ DFLAGS = -MMD -MP
 
 OBJECT_DIR = .obj/
 
-OBJECTS = $(patsubst srcs/%.cpp,$(OBJECT_DIR)%.o,\
+OBJECTS = $(patsubst %.cpp,$(OBJECT_DIR)%.o,\
 		main.cpp \
 		newZombie.cpp \
 		randomChump.cpp \
@@ -31,7 +31,7 @@ OBJ_SUBDIRS = $(sort $(dir ${OBJECTS}))
 
 DEPENDENCIES = $(OBJECTS:.o=.d)
 
-NAME = zombie
+NAME = BRAINZ
 
 .PHONY: all
 all: $(NAME)

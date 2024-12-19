@@ -1,13 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: saperrie <saperrie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 15:23:59 by saperrie          #+#    #+#             */
-/*   Updated: 2024/12/17 15:26:11 by saperrie         ###   ########.fr       */
+/*   Created: 2024/12/17 15:24:01 by saperrie          #+#    #+#             */
+/*   Updated: 2024/12/19 19:19:52 by saperrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+Zombie::Zombie( void ) {
+
+	std::cout << "Constructor called" << std::endl;
+	return;
+}
+
+Zombie::~Zombie( void ) {
+
+	std::cout << "Destructor called" << std::endl;
+	return;
+}
+
+void	Zombie::announce ( void ) {
+
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}

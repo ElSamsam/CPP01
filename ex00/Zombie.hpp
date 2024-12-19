@@ -6,7 +6,7 @@
 /*   By: saperrie <saperrie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 15:25:43 by saperrie          #+#    #+#             */
-/*   Updated: 2024/12/17 16:04:39 by saperrie         ###   ########.fr       */
+/*   Updated: 2024/12/19 19:18:27 by saperrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ public :
 
 		Zombie( void );
 		~Zombie( void );
-		Zombie* newZombie( std::string name );
+
+		static Zombie* newZombie( std::string name );
+		void	randomChump( std::string name );
 
 		void	announce( void );
 
