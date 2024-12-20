@@ -6,7 +6,7 @@
 #    By: saperrie <saperrie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/12 19:00:17 by saperrie          #+#    #+#              #
-#    Updated: 2024/12/20 19:27:27 by saperrie         ###   ########.fr        #
+#    Updated: 2024/12/20 19:30:40 by saperrie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,16 +22,15 @@ OBJECT_DIR = .obj/
 
 OBJECTS = $(patsubst %.cpp,$(OBJECT_DIR)%.o,\
 		main.cpp \
-		newZombie.cpp \
-		randomChump.cpp \
 		Zombie.cpp \
+		zombieHorde.cpp \
 							)
 
 OBJ_SUBDIRS = $(sort $(dir ${OBJECTS}))
 
 DEPENDENCIES = $(OBJECTS:.o=.d)
 
-NAME = BRAINZ
+NAME = MoarBrainz
 
 .PHONY: all
 all: $(NAME)
