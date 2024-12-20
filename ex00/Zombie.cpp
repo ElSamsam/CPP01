@@ -6,7 +6,7 @@
 /*   By: saperrie <saperrie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 15:24:01 by saperrie          #+#    #+#             */
-/*   Updated: 2024/12/19 19:19:52 by saperrie         ###   ########.fr       */
+/*   Updated: 2024/12/20 18:47:13 by saperrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 Zombie::Zombie( void ) {
 
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Constructor for " << this->name << " called" << std::endl;
 	return;
 }
 
 Zombie::~Zombie( void ) {
 
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "Destructor for " << this->name << " called" << std::endl;
 	return;
 }
 
